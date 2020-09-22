@@ -1,0 +1,782 @@
+<!Doctype html>
+<html>
+<head>
+    <title>IPL 2020</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+        *{
+            box-sizing: border-box;
+            margin: 0 0 0 0;
+			font-family: 'Roboto', sans-serif;
+        }
+        
+    .part1{
+        
+        background-image: linear-gradient(#19388a, darkblue);
+        color: white;
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 3px solid black;
+    }
+        .ipl{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+	/*Head logo*/
+		.headlogo{
+			background-image: url(headlogo.jpg);
+			background-size: cover;
+			border-bottom: 5px solid darkblue;
+		}
+        
+        .main{
+            background-image: linear-gradient(purple,#e30b5d);
+            padding-top: 50px;
+            height:1000px;
+			padding-bottom: 50px;
+        }
+        .head{
+            color: gold;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .csk{
+            background-image: url(Chennai-Super-Kings-CSK.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid orange;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         .mi{
+            background-image: url(Mumbai-Indians.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid darkgoldenrod;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .kkr{
+            background-image: url(Kolkata-Knight-Riders-KKR.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid purple;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .srh{
+            background-image: url(Sunrisers-Hyderabad.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid orange;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dc{
+            background-image: url(Delhi-Capitals.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid red;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rcb{
+            background-image: url(Royal-Challengers-Bangalore.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid gold;
+            height: 185px;
+            width: 170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rr{
+            background-image: url(Royal-Rajasthan.png);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid pink;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .kxip{
+            background-image: url(Kings-XI-Punjab-KXIP.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            border: 3px solid red;
+            height: 185px;
+            width: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+		
+        
+        .teams1, .teams2{
+            display: flex; 
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 150px;
+        }
+        .name{
+            padding-top: 190px;
+            text-align: center;
+            text-shadow: 1px 2px 1px black;
+            font-size: 22px;
+            color:goldenrod;
+        }
+		/*Footer starts*/
+        .footer{
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            margin: auto;
+            
+        }
+        .info{
+            text-align: justify;
+            color: white;
+            font-size: 20px;
+            padding: 30px 50px 30px 50px;
+            margin-bottom: 50px;
+        }
+        .info > div{
+            line-height: 150%;
+        }
+        .main > .info > i{
+            color: dimgrey;
+            margin-bottom: 15px;
+            text-shadow: 1px 5px 1px white;
+        }
+			/* Schedule start */
+		.schedule{
+			padding-bottom: 50px;
+			padding-top: 50px;
+            background-image: linear-gradient(#e30b5d, purple);
+		}
+		
+		table{
+			font-family: arial, sans-serif;
+			width: 95%;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+		td,th{
+			border: 1px solid gold;
+			text-align: center;
+			padding: 10px;
+			color: white;
+		}
+		tr:nth-child(even)
+		{
+			background-color:deeppink;
+		}
+		/* Schedule ends */
+		
+		/* Point Table*/
+		.pointtable{
+			padding-bottom: 50px;
+			padding-top: 50px;
+            background-image: linear-gradient(purple,#e30b5d);
+		}
+		div.pointtable tr:nth-child(even)
+		{
+			background-color:mediumpurple;
+		}
+		/*Leaders Start*/
+		.leaders{
+			padding-bottom: 50px;
+			padding-top: 50px;
+		}
+		/*About Start*/
+		.about{
+			background-color: #19388a;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		
+    </style>
+</head>
+    <body>
+    <div class="part1">
+        <div><img src="trophy.jfif" style="height: 150px; margin-top: auto; margin-bottom:0;
+            margin-left: 70px; margin-right: 15px"></div>
+       <div class="ipl"> 
+           <h1 style="margin-bottom:2px ; margin-top:2px ;font-family: 'Roboto', sans-serif;">INDIAN</h1>
+           <h1 style="margin-bottom:2px ; margin-top:2px ;font-family: 'Roboto', sans-serif;">PREMIER</h1>
+           <h1 style="margin-bottom:2px ; margin-top:2px ;font-family: 'Roboto', sans-serif;">LEAGUE</h1>
+        </div>
+        <div style="margin-left:auto; margin-right: auto; margin-top:2px ;font-family: 'Raleway', sans-serif; font-size: 20px">Saturday, 19 Sep - Tuesday, 8 Nov 2020</div>
+    </div>
+	<div class="headlogo">
+		<img src="headlogo.jpg" style="width: 100%; height: 100vh">
+	</div>
+    <div class="main">
+        <div class="info">
+            <i class="fa fa-square-o" aria-hidden="true"></i>
+            <div>The 2020 Indian Premier League, also known as IPL 13 and officially known as Dream 11 IPL, is scheduled to be the thirteenth season of the IPL, a professional Twenty20 cricket league established by the Board of Control for Cricket in India (BCCI) in 2007. This year IPL will take place in United Arab Emirates (UAE). 8 teams are participating in the tournament.</div>
+        
+        
+        </div>
+        <div class="head"><h1>TEAMS</h1></div>
+        <div class="teams1">
+        <a href="http://chennaisuperkings.com/"><div class="csk">
+          <div class="name">Chennai Super Kings</div>
+            </div></a>
+        <a href="http://www.mumbaiindians.com/"><div class="mi">
+            <div class="name">Mumbai Indians</div>
+            </div></a>
+        <a href="http://www.kkr.in/"><div class="kkr">
+            <div class="name">Kolkata Knight Riders</div>
+            </div></a>
+        <a href="https://www.sunrisershyderabad.in/"><div class="srh">
+            <div class="name">Sunrisers Hyderabad</div>
+            </div></a>
+        </div>
+        <div class="teams2">
+        <a href="https://www.delhicapitals.in/"><div class="dc">
+            <div class="name">Delhi Capitals</div>
+            </div></a>
+        <a href="http://www.royalchallengers.com/"><div class="rcb">
+            <div class="name">Royal Challengers Banglore</div>
+            </div></a>
+       <a href="http://www.rajasthanroyals.com/"><div class="rr">
+            <div class="name">Rajasthan Royals</div>
+           </div></a>
+        <a href="https://www.kxip.in/"><div class="kxip">
+            <div class="name">Kings XI Punjab</div>
+            </div></a>
+        </div>
+    </div>
+	<div class="schedule">
+			<div class="head"><h1>SCHEDULE</h1></div>
+			<table>
+			<tr class="heading">
+				<th style="color:gold ; font-size:120%">S.No.</th>
+				<th style="color:gold ; font-size:120%">Match Center</th>
+				<th style="color:gold ; font-size:120%">Date</th>
+				<th style="color:gold ; font-size:120%">Day</th>
+				<th style="color:gold ; font-size:120%">Time(IST)</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<th>Mumbai Indians (MI) Vs Chennai Super Kings (CSK)</th>
+				<th>19 September 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>2</th>
+				<th>Delhi Capital (DC) Vs Kings XI Punjab (KXIP)</th>
+				<th>20 September 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>3</th>
+				<th>Sunrisers Hyderabad (SRH) Vs Royal Challengers Bangalore (RCB)</th>
+				<th>21 September 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>4</th>
+				<th>Rajasthan Royals (RR) Vs Chennai Super Kings (CSK)</th>
+				<th>22 September 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>5</th>
+				<th>Kolkata Knight Riders (KKR) Vs Mumbai Indians (MI)</th>
+				<th>23 September 2020</th>
+				<th>Wednesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>6</th>
+				<th>Kings XI Punjab (KXIP) Vs Royal Challengers Banglore (RCB)</th>
+				<th>24 September 2020</th>
+				<th>Thursday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>7</th>
+				<th>Chennai Super Kings (CSK) vs Delhi Capitals (DC)</th>
+				<th>25 September 2020</th>
+				<th>Friday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>8</th>
+				<th>Kolkata Knight Riders (KKR) vs Sunrisers Hyderabad (SRH)</th>
+				<th>26 September 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>9</th>
+				<th>Rajasthan Royals (RR) Vs Kings XI Punjab (KXIP)</th>
+				<th>27 September 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>10</th>
+				<th> Royal Challengers Bangalore (RCB) vs Mumbai Indians (MI)</th>
+				<th>28 September 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>11</th>
+				<th>Delhi Capitals (DC) vs Sunrisers Hyderabad (SRH)</th>
+				<th>29 September 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+				<tr>
+				<th>12</th>
+				<th>Rajasthan Royals (RR) vs Kolkata Knight Riders (KKR)</th>
+				<th>30 September 2020</th>
+				<th>Wednesday</th>
+				<th>7:30 PM</th>
+			</tr>
+				<tr>
+				<th>13</th>
+				<th>Kings XI Punjab (KXIP) vs Mumbai Indians (MI) </th>
+				<th>1 October 2020</th>
+				<th>Thursday</th>
+				<th>7:30 PM</th>
+			</tr>
+				<tr>
+				<th>14</th>
+				<th>Chennai Super Kings (CSK) vs Sunrisers Hyderabad (SRH)</th>
+				<th>2 October 2020</th>
+				<th>Friday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>15</th>
+				<th>Royal Challengers Banglore (RCB) vs Rajasthan Royals (RR)</th>
+				<th>3 October 2020</th>
+				<th>Saturday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>16</th>
+				<th>Delhi Capitals (DC) vs Kolkata Knight Riders (KKR)</th>
+				<th>3 October 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>17</th>
+				<th>Mumbai Indians (MI) vs Sunrisers Hyderabad (SRH)</th>
+				<th>4 October 2020</th>
+				<th>Sunday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>18</th>
+				<th>Kings XI Punjab (KXIP) vs Chennai Super Kings (CSK)</th>
+				<th>4 October 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>19</th>
+				<th>Royal Challengers Banglore (RCB) vs Delhi Capitals (DC)</th>
+				<th>5 October 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>20</th>
+				<th>Mumbai Indians (MI) vs Rajasthan Royals (RR)</th>
+				<th>6 October 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>21</th>
+				<th>Kolkata Knight Riders (KKR) vs Chennai Super Kings (CSK)</th>
+				<th>7 October 2020</th>
+				<th>Wednesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>22</th>
+				<th>Sunrisers Hyderabad (SRH) vs Kings XI Punjab (KXIP)</th>
+				<th>8 October 2020</th>
+				<th>Thursday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>23</th>
+				<th> Rajasthan Royals (RR) vs Delhi Capitals (DC)</th>
+				<th>9 October 2020</th>
+				<th>Friday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>24</th>
+				<th>Kings XI Punjab (KXIP) vs Kolkata Knight Riders (KKR)</th>
+				<th>10 October 2020</th>
+				<th>Saturday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>25</th>
+				<th>Chennai Super Kings (CSK) vs Royal Challengers Banglore (RCB)</th>
+				<th>10 October 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>26</th>
+				<th>Sunrisers Hyderabad (SRH) vs Rajasthan Royals (RR)</th>
+				<th>11 October 2020</th>
+				<th>Sunday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>27</th>
+				<th>Mumbai Indians (MI) vs  Delhi Capitals (DC)</th>
+				<th>11 October 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>28</th>
+				<th>Royal Challengers Banglore (RCB) vs Kolkata Knight Riders (KKR)</th>
+				<th>12 October 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>29</th>
+				<th>Sunrisers Hyderabad (SRH) vs Chennai Super Kings (CSK)</th>
+				<th>13 October 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>30</th>
+				<th>Delhi Capitals (DC) vs Rajasthan Royals (RR)</th>
+				<th>14 October 2020</th>
+				<th>Wednesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>31</th>
+				<th>Royal Challengers Banglore (RCB) vs Kings XI Punjab (KXIP)</th>
+				<th>15 October 2020</th>
+				<th>Thursday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>32</th>
+				<th>Mumbai Indians (MI) vs Kolkata Knight Riders (KKR)</th>
+				<th>16 October 2020</th>
+				<th>Friday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>33</th>
+				<th>Rajasthan Royals (RR) vs Royal Challengers Banglore (RCB)</th>
+				<th>17 October 2020</th>
+				<th>Saturday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>34</th>
+				<th>Delhi Capitals (DC) vs Chennai Super Kings (CSK)</th>
+				<th>17 October 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>35</th>
+				<th>Sunrisers Hyderabad (SRH) vs Kolkata Knight Riders (KKR)</th>
+				<th>18 October 2020</th>
+				<th>Sunday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>36</th>
+				<th>Mumbai Indians (MI) vs Kings XI Punjab (KXIP)</th>
+				<th>18 October 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>37</th>
+				<th>Chennai Super Kings (CSK) vs Rajasthan Royals (RR)</th>
+				<th>19 October 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>38</th>
+				<th>Kings XI Punjab (KXIP) vs Delhi Capitals (DC)</th>
+				<th>20 October 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>39</th>
+				<th>Kolkata Knight Riders (KKR) vs Royal Challengers Banglore (RCB)</th>
+				<th>21 October 2020</th>
+				<th>Wednesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>40</th>
+				<th>Rajasthan Royals (RR) vs Sunrisers Hyderabad (SRH)</th>
+				<th>22 October 2020</th>
+				<th>Thursday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>41</th>
+				<th>Chennai Super Kings (CSK) vs Mumbai Indians (MI)</th>
+				<th>23 October 2020</th>
+				<th>Friday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>42</th>
+				<th>Kolkata Knight Riders (KKR) vs Delhi Capitals (DC)</th>
+				<th>24 October 2020</th>
+				<th>Saturday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>43</th>
+				<th>Kings XI Punjab (KXIP) vs Sunrisers Hyderabad (SRH)</th>
+				<th>24 October 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>44</th>
+				<th>Royal Challengers Banglore (RCB) vs Chennai Super Kings (CSK)</th>
+				<th>25 October 2020</th>
+				<th>Sunday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>45</th>
+				<th>Rajasthan Royals (RR) vs Mumbai Indians (MI)</th>
+				<th>25 October 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>46</th>
+				<th>Kolkata Knight Riders (KKR) vs Kings XI Punjab (KXIP)</th>
+				<th>26 October 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>47</th>
+				<th>Sunrisers Hyderabad (SRH) vs Delhi Capitals (DC)</th>
+				<th>27 October 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>48</th>
+				<th>Mumbai Indians (MI) vs Royal Challengers Banglore (RCB)</th>
+				<th>28 October 2020</th>
+				<th>Wednesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>49</th>
+				<th>Chennai Super Kings (CSK) vs Kolkata Knight Riders (KKR)</th>
+				<th>29 October 2020</th>
+				<th>Thursday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>50</th>
+				<th>Kings XI Punjab (KXIP) vs Rajasthan Royals (RR)</th>
+				<th>30 October 2020</th>
+				<th>Friday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>51</th>
+				<th>Delhi Capitals (DC) vs Mumbai Indians (MI)</th>
+				<th>31 October 2020</th>
+				<th>Saturday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>52</th>
+				<th>Royal Challengers Banglore (RCB) vs Sunrisers Hyderabad (SRH)</th>
+				<th>31 October 2020</th>
+				<th>Saturday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>53</th>
+				<th>Chennai Super Kings (CSK) vs Kings XI Punjab (KXIP)</th>
+				<th>1 November 2020</th>
+				<th>Sunday</th>
+				<th>3:30 PM</th>
+			</tr>
+			<tr>
+				<th>54</th>
+				<th>Kolkata Knight Riders (KKR) vs Rajasthan Royals (RR)</th>
+				<th>1 November 2020</th>
+				<th>Sunday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>55</th>
+				<th>Delhi Capitals (DC) vs Royal Challengers Banglore (RCB)</th>
+				<th>2 November 2020</th>
+				<th>Monday</th>
+				<th>7:30 PM</th>
+			</tr>
+			<tr>
+				<th>56</th>
+				<th>Sunrisers Hyderabad (SRH) vs Mumbai Indians (MI)</th>
+				<th>3 November 2020</th>
+				<th>Tuesday</th>
+				<th>7:30 PM</th>
+			</tr>
+			</table>
+
+		</div>
+		<div class="pointtable">
+			<div class="head"><h1>POINTS TABLE</h1></div>
+			<table>
+			<tr class="heading">
+				<th style="color:gold ; font-size:120%">Standing</th>
+				<th style="color:gold ; font-size:120%">Teams</th>
+				<th style="color:gold ; font-size:120%">Matches</th>
+				<th style="color:gold ; font-size:120%">Won</th>
+				<th style="color:gold ; font-size:120%">Lost</th>
+				<th style="color:gold ; font-size:120%">Points</th>
+				<th style="color:gold ; font-size:120%">NRR</th>
+			</tr>
+			<tr>
+				<th>1</th>
+				<th>Royal Challengers Banglore</th>
+				<th>1</th>
+				<th>1</th>
+				<th>0</th>
+				<th>2</th>
+				<th>+0.500</th>
+			</tr>
+			<tr>
+				<th>2</th>
+				<th>Chennai Super Kings</th>
+				<th>1</th>
+				<th>1</th>
+				<th>0</th>
+				<th>2</th>
+				<th>+0.486</th>
+			</tr>
+				<tr>
+				<th>3</th>
+				<th>Delhi Capitals</th>
+				<th>1</th>
+				<th>1</th>
+				<th>0</th>
+				<th>2</th>
+				<th>+0.000</th>
+			</tr>
+			<tr>
+				<th>4</th>
+				<th>Kings XI Punjab</th>
+				<th>1</th>
+				<th>0</th>
+				<th>1</th>
+				<th>0</th>
+				<th>+0.000</th>
+			</tr>
+				<tr>
+				<th>5</th>
+				<th>Kolkata Knights Riders</th>
+				<th>0</th>
+				<th>0</th>
+				<th>0</th>
+				<th>0</th>
+				<th>+0.000</th>
+			</tr>
+			<tr>
+				<th>6</th>
+				<th>Rajasthan Royals</th>
+				<th>0</th>
+				<th>0</th>
+				<th>0</th>
+				<th>0</th>
+				<th>+0.000</th>
+			</tr>
+			<tr>
+				<th>7</th>
+				<th>Mumbai Indians</th>
+				<th>1</th>
+				<th>0</th>
+				<th>1</th>
+				<th>0</th>
+				<th>-0.486</th>
+			</tr>
+			<tr>
+				<th>8</th>
+				<th>Sunrisers Hyderabad</th>
+				<th>1</th>
+				<th>0</th>
+				<th>1</th>
+				<th>0</th>
+				<th>-0.500</th>
+			</tr>
+			</table>
+		
+		</div>			
+
+		<div class="about">
+			<div></div>
+		</div>
+	
+    <div class="footer">
+        <div>&copy; Copyrights IPLT20, BCCI 2020. All Rights Reserved</div>
+    </div>
+    
+    
+    
+    
+    
+    </body>
+</html>
